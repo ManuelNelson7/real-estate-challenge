@@ -5,6 +5,18 @@ header {
     justify-content: center;
     z-index: 1000;
 
+    &.scrolled {
+        background-color: $dark-blue;
+
+        nav {
+            padding: 1.2em 0;
+
+            img {
+                height: 2.5em;
+            }
+        }
+    }
+
     nav {
         width: 95%;
         display: flex;
@@ -13,19 +25,22 @@ header {
         align-items: center;
         min-height: 70px;
         padding: 2.5em 0;
+        width: 90%;
 
         img {
             height: 3em;
-            transition: all 0.2s;
+            transition: all 0.1s;
             &:hover {
                 filter: sepia(2);
-                filter: saturate(6);
+                filter: saturate(8);
+                filter: brightness(0.9);
             }
         }
 
         .list-container {
             display: flex;
             align-items: center;
+            gap: 2em;
 
             .nav-list {
                 display: flex;
@@ -54,43 +69,38 @@ header {
     }
 }
 
-.hamburger {
-    display: flex;
-    align-items: center;
-    border: none;
-    padding: 28px 13px;
-    background-color: transparent;
-    cursor: pointer;
-    outline: none;
+@media screen and (max-width: 480px) {
+    header {
+        &.scrolled {
+            background-color: $dark-blue;
 
-    .bars {
-        color: #fff;
-        position: relative;
-        display: block;
-        width: 26px;
-        height: 2px;
-        transition: 0.2s transform ease;
+            nav {
+                padding: 1.5em 0;
+                width: 90%;
 
-        &::before {
-            content: "";
-            display: block;
-            width: 26px;
-            height: 2px;
-            position: absolute;
-            left: 0;
-            top: 0;
-            transition: 0.2s transform ease;
+                img {
+                    height: 1.5em;
+                }
+            }
         }
+        nav {
+            padding: 1.5em 0;
 
-        &::after {
-            content: "";
-            display: block;
-            width: 26px;
-            height: 2px;
-            position: absolute;
-            left: 0;
-            top: 0;
-            transition: 0.2s transform ease;
+            img {
+                height: 1.5em;
+            }
+
+            .list-container {
+                .nav-list {
+                    display: none;
+                }
+            }
         }
     }
+}
+
+.menu {
+    color: white;
+    font-size: 1.4em;
+    cursor: pointer;
 }

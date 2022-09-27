@@ -1,10 +1,25 @@
-$dark-blue: #1b3060;
+$dark-blue: #101f43;
+$accent-blue: #769cf4;
 $primary-font: "Lora", serif;
+
+html {
+    scroll-behavior: smooth;
+}
+
+.text-blue {
+    color: $accent-blue;
+}
+
+.text-dark {
+    color: $dark-blue;
+    font-weight: 600;
+    text-decoration: underline;
+}
 
 .primary-btn {
     border: none;
-    padding: 0.75em 1.5em;
-    font-size: 1.4em;
+    padding: 0.75em 1em;
+    font-size: 1.3em;
     background-color: transparent;
     color: #fff;
     border: solid 3px #fff;
@@ -20,8 +35,8 @@ $primary-font: "Lora", serif;
 
 .secondary-btn {
     border: none;
-    padding: 0.75em 1.5em;
-    font-size: 1.4em;
+    padding: 0.75em 1em;
+    font-size: 1.3em;
     background-color: #fff;
     color: $dark-blue;
     cursor: pointer;
@@ -35,8 +50,21 @@ $primary-font: "Lora", serif;
     }
 }
 
+.short-btn {
+    width: fit-content;
+}
+
 .container {
     display: flex;
     width: 90%;
     max-width: 1780px;
+}
+
+@media screen and (max-width: 480px) {
+    .primary-btn {
+        font-size: 1em;
+    }
+    .secondary-btn {
+        font-size: 1em;
+    }
 }

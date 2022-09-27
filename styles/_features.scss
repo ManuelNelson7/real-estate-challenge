@@ -1,0 +1,123 @@
+#features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    background: linear-gradient(90deg, #f5f4f4, #fff);
+
+    .container {
+        width: 80%;
+        max-width: 1780px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 3em 0;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4em;
+
+        &.order-left {
+            .image-container {
+                order: 1;
+            }
+            .text-container {
+                order: 2;
+                width: 100%;
+                margin-left: 4em;
+            }
+        }
+
+        &.order-right {
+            .image-container {
+                order: 2;
+            }
+            .text-container {
+                order: 1;
+            }
+        }
+
+        .image-container {
+            display: flex;
+            width: 100%;
+            height: 60vh;
+
+            &.h-max {
+                height: 65vh;
+            }
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .text-container {
+            width: 100%;
+            h4 {
+                color: $dark-blue;
+                font-family: $primary-font;
+                font-size: 2em;
+                margin-top: 1em;
+                width: 80%;
+            }
+
+            p {
+                font-family: "Montserrat";
+                font-weight: 500;
+                color: #3e3e3e;
+                margin-top: 1em;
+                font-size: 1.05em;
+                line-height: 1.4em;
+                width: 80%;
+            }
+
+            .secondary-p {
+                margin-top: 0.3em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #features {
+        .container {
+            width: 90%;
+            grid-template-columns: 1fr;
+            gap: 2em;
+            padding: 1em 0;
+
+            &.order-left {
+                .image-container {
+                    order: 2;
+                }
+                .text-container {
+                    order: 1;
+                    width: 100%;
+                    margin-left: 0em;
+                }
+            }
+
+            .image-container {
+                height: 30vh;
+
+                &.h-max {
+                    height: 30vh;
+                }
+            }
+
+            .text-container {
+                h4 {
+                    font-size: 1.6em;
+                    width: 100%;
+                }
+
+                p {
+                    font-size: 1em;
+                    line-height: 1.4em;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
