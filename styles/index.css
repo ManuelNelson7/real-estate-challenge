@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,500&family=Montserrat:wght@400;500;600;700&display=swap");
+.primary-btn {
+  border: none;
+  padding: 0.75em 1.5em;
+  font-size: 1.4em;
+  background-color: transparent;
+  color: #fff;
+  border: solid 3px #fff;
+  cursor: pointer;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.primary-btn:hover {
+  background-color: #fff;
+  outline: none;
+  color: #1b3060;
+}
+
+.secondary-btn {
+  border: none;
+  padding: 0.75em 1.5em;
+  font-size: 1.4em;
+  background-color: #fff;
+  color: #1b3060;
+  cursor: pointer;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.secondary-btn:hover {
+  background-color: #1b3060;
+  outline: solid 3px #1b3060;
+  color: #fff;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  max-width: 1780px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1000;
+}
+
+header nav {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 70px;
+  padding: 2.5em 0;
+}
+
+header nav img {
+  height: 3em;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+header nav img:hover {
+  -webkit-filter: sepia(2);
+          filter: sepia(2);
+  -webkit-filter: saturate(6);
+          filter: saturate(6);
+}
+
+header nav .list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .list-container .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  gap: 2em;
+}
+
+header nav .list-container .nav-list li {
+  opacity: 80%;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+header nav .list-container .nav-list li:hover {
+  opacity: 100%;
+}
+
+header nav .list-container .nav-list li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  padding: 28px 13px;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.hamburger .bars {
+  color: #fff;
+  position: relative;
+  display: block;
+  width: 26px;
+  height: 2px;
+  -webkit-transition: 0.2s -webkit-transform ease;
+  transition: 0.2s -webkit-transform ease;
+  transition: 0.2s transform ease;
+  transition: 0.2s transform ease, 0.2s -webkit-transform ease;
+}
+
+.hamburger .bars::before {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: 0.2s -webkit-transform ease;
+  transition: 0.2s -webkit-transform ease;
+  transition: 0.2s transform ease;
+  transition: 0.2s transform ease, 0.2s -webkit-transform ease;
+}
+
+.hamburger .bars::after {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: 0.2s -webkit-transform ease;
+  transition: 0.2s -webkit-transform ease;
+  transition: 0.2s transform ease;
+  transition: 0.2s transform ease, 0.2s -webkit-transform ease;
+}
+
+#content-1 {
+  background-color: #1b3060;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 40vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#content-1 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+}
+
+#content-1 div h2 {
+  font-family: "Lora", serif;
+  color: white;
+  text-align: center;
+}
+
+#content-1 div p {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+#home video {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  width: auto;
+  height: 100%;
+}
+
+#home .hero-container {
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3em;
+}
+
+#home .hero-container h1 {
+  font-family: "Lora", serif;
+  font-size: 3.5rem;
+  width: 70%;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+#home .hero-container .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2em;
+}
+/*# sourceMappingURL=index.css.map */

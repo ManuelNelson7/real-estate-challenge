@@ -1,0 +1,42 @@
+$dark-blue: #1b3060;
+$primary-font: "Lora", serif;
+
+.primary-btn {
+    border: none;
+    padding: 0.75em 1.5em;
+    font-size: 1.4em;
+    background-color: transparent;
+    color: #fff;
+    border: solid 3px #fff;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.2s;
+    &:hover {
+        background-color: #fff;
+        outline: none;
+        color: $dark-blue;
+    }
+}
+
+.secondary-btn {
+    border: none;
+    padding: 0.75em 1.5em;
+    font-size: 1.4em;
+    background-color: #fff;
+    color: $dark-blue;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.2s;
+
+    &:hover {
+        background-color: $dark-blue;
+        outline: solid 3px $dark-blue;
+        color: #fff;
+    }
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1780px;
+}

@@ -1,0 +1,24 @@
+#content-1 {
+    background-color: $dark-blue;
+    display: flex;
+    justify-content: center;
+    min-height: 40vh;
+    align-items: center;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        h2 {
+            font-family: $primary-font;
+            color: white;
+            text-align: center;
+        }
+
+        p {
+            font-family: 'Montserrat';
+            font-weight: 500;
+            color: white;
+        }
+    }
+}

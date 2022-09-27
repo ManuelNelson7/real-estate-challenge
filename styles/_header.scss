@@ -1,0 +1,96 @@
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+
+    nav {
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 70px;
+        padding: 2.5em 0;
+
+        img {
+            height: 3em;
+            transition: all 0.2s;
+            &:hover {
+                filter: sepia(2);
+                filter: saturate(6);
+            }
+        }
+
+        .list-container {
+            display: flex;
+            align-items: center;
+
+            .nav-list {
+                display: flex;
+                list-style: none;
+                gap: 2em;
+
+                li {
+                    opacity: 80%;
+                    transition: all;
+                    transition-duration: 0.2s;
+
+                    &:hover {
+                        opacity: 100%;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        font-family: "Montserrat", sans-serif;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hamburger {
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 28px 13px;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+
+    .bars {
+        color: #fff;
+        position: relative;
+        display: block;
+        width: 26px;
+        height: 2px;
+        transition: 0.2s transform ease;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 26px;
+            height: 2px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: 0.2s transform ease;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 26px;
+            height: 2px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: 0.2s transform ease;
+        }
+    }
+}
