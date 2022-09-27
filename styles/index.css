@@ -387,6 +387,13 @@ header nav .list-container .nav-list li a {
      object-fit: cover;
   width: 100%;
   height: 100%;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+#features .container .image-container img:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
 }
 
 #features .container .text-container {
